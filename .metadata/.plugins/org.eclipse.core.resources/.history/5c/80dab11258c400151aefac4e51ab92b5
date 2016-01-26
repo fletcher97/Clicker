@@ -60,10 +60,6 @@ public class Consol extends JFrame implements Runnable {
 			}
 		});
 		
-		this.add(jt, BorderLayout.PAGE_END);
-
-		this.setVisible(true);
-		start();
 	}
 
 	@Override

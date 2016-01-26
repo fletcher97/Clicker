@@ -16,7 +16,7 @@ public class Screen {
 		this.height = height;
 		this.consol = consol;
 		pixels = new int[width * height];
-		if(Clicker.debug) consol.print("Screen created"));
+		if(Clicker.debug) consol.write("Screen created"));
 	}
 
 	public void clear() {
