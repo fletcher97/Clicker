@@ -1,0 +1,26 @@
+package com.fletcher.clicker.screen;
+
+import com.fletcher.clicker.consol.Consol;
+
+public class Screen {
+
+	public Screen(int width, int height, Consol consol) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void render() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public int[] getPixels() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

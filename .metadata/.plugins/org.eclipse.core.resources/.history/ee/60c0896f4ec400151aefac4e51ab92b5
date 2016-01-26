@@ -1,0 +1,5 @@
+package com.fletcher.clicker.input;
+
+public class Mouse {
+
+}

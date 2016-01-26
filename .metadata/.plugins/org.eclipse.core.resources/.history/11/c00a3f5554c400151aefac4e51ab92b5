@@ -1,0 +1,10 @@
+package com.fletcher.clicker.consol;
+
+import com.fletcher.clicker.Clicker;
+
+public class Consol {
+
+	public Consol(Clicker clicker) {
+	}
+
+}

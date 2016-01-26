@@ -1,0 +1,11 @@
+package com.fletcher.clicker.screen;
+
+import com.fletcher.clicker.consol.Consol;
+
+public class Screen {
+
+	public Screen(int width, int height, Consol consol) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

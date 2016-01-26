@@ -1,0 +1,13 @@
+package com.fletcher.clicker.level;
+
+import com.fletcher.clicker.consol.Consol;
+import com.fletcher.clicker.input.Keyboard;
+import com.fletcher.clicker.input.Mouse;
+
+public class Level {
+
+	public Level(Keyboard key, Mouse mouse, Consol consol) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

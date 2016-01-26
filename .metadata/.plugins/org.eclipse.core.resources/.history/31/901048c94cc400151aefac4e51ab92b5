@@ -1,0 +1,9 @@
+package com.fletcher.clicker.consol;
+
+public class Consol {
+
+	public Consol(Clicker clicker) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

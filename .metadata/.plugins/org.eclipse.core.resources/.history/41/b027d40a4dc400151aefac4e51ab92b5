@@ -1,0 +1,71 @@
+package com.fletcher.clicker;
+
+import java.awt.Canvas;
+import java.awt.Component;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+
+import com.fletcher.clicker.consol.Consol;
+import com.fletcher.clicker.level.Level;
+
+public class Clicker extends Canvas implements Runnable{
+
+	private Thread thread;
+	private boolean running = false;
+	private JFrame frame;
+	private Level level;
+	private Consol consol;
+	private static final String TITLE = "Clicker v 0.1";
+	
+	public static void main(String[] args) {
+		
+		Clicker game = new Clicker();
+		
+		game.frame.setResizable(false);
+		game.frame.setTitle(TITLE);
+		game.frame.add(game);
+		game.frame.pack();
+		game.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		game.frame.setLocationRelativeTo(null);
+		game.frame.setVisible(true);
+		
+		game.start();
+		
+	}
+
+	public Clicker(){
+		
+		Dimension size = new Dimension(width, height);
+		setPreferredSize(size);
+		
+		consol = new Consol(this);
+		
+	}
+	
+	public synchronized void start(){
+	
+		running = true;
+		thread = new Thread(this, "Clicker");
+		thread.start();
+		
+	}
+
+	public synchronized void stop(){
+
+		running = false;
+		try{
+			thread.join();
+		}catch(InterruptedException e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
